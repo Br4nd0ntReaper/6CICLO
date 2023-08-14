@@ -1,0 +1,168 @@
+﻿@{
+    ViewBag.Title = "INICIO";
+}
+
+@Styles.Render("~/Content/css")
+<link rel="stylesheet" href="~/css/StyleSheet1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <style>
+        p, h1 {
+            color: rgb(8, 22, 34);
+            text-shadow: 1px 1px 5px #1c1d12, 1px 0px 8px #7f5f5f, 1px -5px 10px #0d2722, 1px -10px 15px #ff87ff;
+            background-clip: content-box;
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+            -webkit-text-stroke-width: calc(1em / 16);
+            -webkit-background-clip: content-box;
+            font-size: 4vmin;
+            padding: calc(calc(1em / 16) / 2);
+            letter-spacing: calc(1em / 12);
+        }
+
+        h2 {
+            color: rgb(8, 22, 34);
+            text-shadow: 1px 1px 5px #1c1d12, 1px 0px 8px #7f5f5f, 1px -5px 10px #0d2722, 1px -10px 15px #ff87ff;
+            background-clip: content-box;
+            -webkit-text-stroke-color: rgb(3, 62, 117);
+            -webkit-text-stroke-width: calc(1em / 16);
+            -webkit-background-clip: content-box;
+            font-size: 4vmin;
+            padding: calc(calc(1em / 16) / 2);
+            letter-spacing: calc(1em / 12);
+        }
+
+        h4 {
+            color: rgb(8, 22, 34);
+            text-shadow: 1px 1px 5px #1c1d12, 1px 0px 8px #7f5f5f, 1px -5px 10px #0d2722, 1px -10px 15px #ff87ff;
+            background-clip: content-box;
+            -webkit-text-stroke-color: rgb(4, 96, 37);
+            -webkit-text-stroke-width: calc(1em / 16);
+            -webkit-background-clip: content-box;
+            font-size: 3vmin;
+            padding: calc(calc(1em / 16) / 2);
+            letter-spacing: calc(1em / 12);
+        }
+        
+
+    </style>
+</head>
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">¡Bienvenido!</h1>
+        <p class="lead">Aquí encontrarás diferentes variedades de comidas, comidas rápidas y postres. ¡Disfruta!</p>
+        <p><a href="https://comidasperuanas.net/platos-tipicos-de-la-costa-peruana/" class="btn btn-outline-success btn-md">Variedades &raquo;</a></p>
+    </section>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active rounded-pill" data-bs-interval="5000">
+                <img src="~/css/comida-rapida.jpg" width="100" height="500" class="d-block w-100 rounded-pill" alt="Entradas - goSenati">
+                <div class="carousel-caption d-none d-md-block text-light">
+                    <h3><b>Comidas</b></h3>
+                    <h5><b>Hamburguesas, Nuggets de pollo, Hot wings y más...</b></h5>
+                </div>
+            </div>
+            <div class="carousel-item rounded-pill" data-bs-interval="5000">
+                <img src="~/css/postres.jpg" width="100" height="500" class="d-block w-100 rounded-pill" alt="Segundos - goSenati">
+                <div class="carousel-caption d-none d-md-block text-info">
+                    <h3><b>Postres</b></h3>
+                    <h5><b>Helados, McFlurrys y más...</b></h5>
+                </div>
+            </div>
+            <div class="carousel-item rounded-pill">
+                <img src="~/css/combos.jpeg" width="100" height="500" class="d-block w-100 rounded-pill" alt="Postres - goSenati">
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <h3><b>Combos</b></h3>
+                    <h5><b>Nugget box, Hot Wing box, Chicken box y más...</b></h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <br /><br />
+    </div>
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <img src="~/css/personal.jpg" class="card-img-top rounded-circle" height="350" alt="Chefs">
+            <p><h2 id="gettingStartedTitle" class="text-center">Nuestro personal</h2></p>
+            <h4>Todo personal reciben capacitación constante de acuerdo a como preparar y servir nuestros productos, y cumplir con los protocolos de calidad.</h4>
+        </section>
+        <section class="col-md-4" aria-labelledby="librariesTitle">
+            <img src="~/css/locales.jpg" class="card-img-top rounded-circle" height="350" alt="Local">
+            <p><h2 id="librariesTitle" class="text-center">Local amplio</h2></p>
+            <h4>Nuestro local se mantiene limpio y ordenado a la espera de nuestros clientes.</h4>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <img src="~/css/variedades.jpg" class="card-img-top rounded-circle" height="350" alt="Variedades">
+            <p><h2 id="hostingTitle" class="text-center">Variedades</h2></p>
+            <h4>Cada día servimos variedades de combos para satisfacer a nuestros clientes.</h4>
+        </section>
+
+        <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "2081fcea-0ea8-4ff0-aab1-96ff70311f9b", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "407bed5c-d424-43d1-b496-fd7b9980a91a", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+        </script>
+
+        <div class="card mb-xl-4" style="max-width: auto;">
+            <div class="row g-0">
+                <div class="col-md-7">
+                    <img src="~/css/delivery.jpg" width="650" height="550" class="img-fluid rounded-end-5" alt="Delivery">
+                </div>
+                <div class="col-md-5">
+                    <div class="card-body">
+                        <h1 class="card-title"><b>Ofrecemos Delivery</b></h1>
+                        <p class="text-uppercase font-monospace"><h4>Compra online y disfruta promociones exclusivas. Paga en tu domicilio u oficina, con efectivo o tarjeta, sin costo adicional. ¡Fácil y rápido!</h4></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-xl-4" style="max-width: auto;">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <div class="card-body">
+                        <h1 class="card-title"><b>Control de calidad</b></h1>
+                        <p class="text-uppercase font-monospace"><h4>Contamos con una ISO 9001, desarrollándose controles de calidad de la cadena de suministro de nuestros productos.</h4></p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <img src="~/css/calidad.jpg" class="img-fluid rounded-start-5" alt="Control de calidad">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card mb-xl-4" style="max-width: auto;">
+            <div class="row g-0">
+                <div class="col-md-7">
+                    <img src="~/css/fresco.jpg" width="650" height="550" class="img-fluid rounded-end-5" alt="Alimentos frescos">
+                </div>
+                <div class="col-md-5">
+                    <div class="card-body">
+                        <h1 class="card-title"><b>Alimentos frescos</b></h1>
+                        <p class="text-uppercase font-monospace"><h4>Todas nuestras comidas son preparadas con alimentos frescos y que luego pasarán a los comensales para el goce.</h4></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</main>
